@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+/* ── SPK Design System tokens (auto-generated — edit design-tokens.css only) */
+@import "./design-tokens.css";
+
+/* =============================================================
+   Project-level overrides & LP-specific tokens
+   (values not in the DS, or semantic aliases for this project)
+   ============================================================= */
+@theme {
+
+  /* ── Semantic color aliases ──────────────── */
+  --color-primary:    var(--color-spk-grey-1000);   /* #0e0f10 */
+  --color-secondary:  var(--color-spk-grey-700);    /* #4e5a63 */
+  --color-grey-600:   var(--color-spk-grey-600);    /* #61717c */
+  --color-grey-300:   var(--color-spk-grey-300);    /* #c0c6cb */
+  --color-teal-700:   var(--color-spk-teal-700);    /* #1bb599 */
+  --color-blue-link:  var(--color-spk-blue-700);    /* #0056ce */
+  --color-footer-bg:  var(--color-spk-grey-50);     /* #f7f8f8 */
+
+  /* ── LP-specific colors (not in DS) ─────── */
+  --color-grey-400:   #a0aab0;
+  --color-grey-100:   #eff1f2;
+  --color-brand:      #3392ff;   /* used in input focus shadow */
+  --color-red-700:    #cb3030;   /* form validation */
+
+  /* ── Radius aliases ──────────────────────── */
+  --radius-8:  var(--radius-spk-8);
+  --radius-12: 12px;
+
+  /* ── Shadows ─────────────────────────────── */
+  --shadow-header: 0 8px 16px 0 rgba(0,0,0,0.12),       0 0 2px 0 rgba(0,0,0,0.12);
+  --shadow-input:  0 8px 16px 0 rgba(51,146,255,0.12),   0 0 2px 0 rgba(51,146,255,0.12);
+  --shadow-btn:    0 8px 16px 0 rgba(27,181,153,0.12),   0 0 2px 0 rgba(27,181,153,0.12);
+
+  /* ── Breakpoints (Figma LP frames) ──────── */
+  --breakpoint-bp-375:  375px;
+  --breakpoint-bp-599:  599px;
+  --breakpoint-bp-799:  799px;
+  --breakpoint-bp-991:  991px;
+  --breakpoint-bp-1440: 1440px;
+}
+
+/* ── Base resets ─────────────────────────────────────────────── */
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  body   { -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  a      { text-decoration: none; color: inherit; }
+  ul     { list-style: none; padding: 0; margin: 0; }
+  img    { display: block; }
+  button { cursor: pointer; background: none; border: none; font: inherit; }
+}

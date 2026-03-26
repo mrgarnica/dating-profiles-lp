@@ -1,0 +1,90 @@
+/* =============================================================
+   SPK V11 Design System — Design Tokens
+   Source: figma.com/design/2Aj1lxh4ckB8lufemXBGzg
+   Node:   17585:57083
+
+   ⚠️  AUTO-GENERATED — do not edit by hand.
+       To update: share the Figma DS URL and ask Claude to
+       re-run get_variable_defs and regenerate this file.
+   Last synced: 2026-03-26
+   ============================================================= */
+
+@theme {
+
+  /* ── Colors: Neutrals ────────────────────── */
+  --color-spk-white:      #ffffff;
+  --color-spk-black:      #000000;
+  --color-spk-grey-50:    #f7f8f8;
+  --color-spk-grey-300:   #c0c6cb;
+  --color-spk-grey-600:   #61717c;
+  --color-spk-grey-700:   #4e5a63;
+  --color-spk-grey-900:   #272d32;
+  --color-spk-grey-1000:  #0e0f10;
+
+  /* ── Colors: Teal ────────────────────────── */
+  --color-spk-teal-700:   #1bb599;
+
+  /* ── Colors: Blue ────────────────────────── */
+  --color-spk-blue-100:   #edf5ff;
+  --color-spk-blue-600:   #1370f3;
+  --color-spk-blue-700:   #0056ce;
+  --color-spk-blue-1000:  #00132d;
+
+  /* ── Colors: Blue Purple ─────────────────── */
+  --color-spk-blue-purple-600: #3333ff;
+  --color-spk-blue-purple-700: #2929ce;
+
+  /* ── Colors: Blue Grey ───────────────────── */
+  --color-spk-blue-grey-600: #4f6c96;
+  --color-spk-blue-grey-900: #162540;
+
+  /* ── Colors: Accent ──────────────────────── */
+  --color-spk-orange-700:  #cc5e1e;
+  --color-spk-yellow-600:  #ffcd1a;
+  --color-spk-yellow-700:  #d9aa00;
+  --color-spk-magenta-700: #ab25b8;
+  --color-spk-purple-700:  #6534ce;
+
+  /* ── Spacing ─────────────────────────────── */
+  --spacing-spk-4:  4px;
+  --spacing-spk-8:  8px;
+  --spacing-spk-12: 12px;
+  --spacing-spk-16: 16px;
+  --spacing-spk-20: 20px;
+  --spacing-spk-24: 24px;
+  --spacing-spk-32: 32px;
+  --spacing-spk-40: 40px;
+  --spacing-spk-60: 60px;
+
+  /* ── Corner Radius ───────────────────────── */
+  --radius-spk-4:    4px;
+  --radius-spk-8:    8px;
+  --radius-spk-full: 9999px;
+
+  /* ── Typography: Font Families ───────────── */
+  --font-inter:      Inter, sans-serif;
+  --font-helvetica:  Helvetica, Arial, sans-serif;
+
+  /* ── Typography: Scale ───────────────────── */
+  /* body/Small — Helvetica Regular 14/20 */
+  --text-body-xs: 0.75rem;
+  --text-body-xs--line-height: 1rem;
+  --text-body-xs--letter-spacing: 0px;
+
+  --text-body-sm: 0.875rem;
+  --text-body-sm--line-height: 1.25rem;
+  --text-body-sm--letter-spacing: 0px;
+
+  --text-body-md: 1rem;
+  --text-body-md--line-height: 1.5rem;
+  --text-body-md--letter-spacing: 0px;
+
+  /* Display/Large — Inter SemiBold 32/38 -0.2 */
+  --text-display-md: 1.75rem;
+  --text-display-md--line-height: 2.125rem;
+  --text-display-md--letter-spacing: -0.2px;
+
+  --text-display-xl: 2rem;
+  --text-display-xl--line-height: 2.375rem;
+  --text-display-xl--letter-spacing: -0.2px;
+}

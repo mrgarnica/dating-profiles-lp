@@ -112,7 +112,7 @@ export default function Hero() {
 
         {/* Media social proof */}
         <div className="flex flex-col gap-3 items-start bp-599:items-center w-full z-[1]" style={{ animation: 'fadeInUp 0.6s ease-out 450ms both' }}>
-          <p className="font-helvetica font-bold text-body-xs text-grey-600 text-left bp-799:text-center">
+          <p className="font-helvetica font-bold text-body-sm text-grey-600 text-left bp-799:text-center">
             Spokeo has been featured on
           </p>
           {/* Full text logos — ≥799px only */}

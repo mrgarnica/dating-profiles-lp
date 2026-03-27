@@ -6,7 +6,7 @@ function InputField({ id, placeholder, showTooltip }) {
   const isError = !filled   // error shown by default until field is filled
 
   return (
-    <div className="relative flex flex-col gap-1 flex-1 min-w-0">
+    <div className="relative flex flex-col gap-1 w-full bp-599:flex-1 bp-599:min-w-0">
       {/* Input wrapper */}
       <div className={[
         'flex items-center gap-2 px-4 h-12 bg-white rounded-8 border-2 transition-colors shadow-input w-full overflow-hidden',
@@ -92,7 +92,7 @@ export default function SearchForm() {
               style={{ backgroundImage: "url('/assets/564a99acf8c6ecaf2ec6a4fa53bde120cae90f28.svg')" }}
               aria-hidden="true"
             />
-            <span className="font-helvetica text-body-sm bp-799:text-body-md text-primary">{text}</span>
+            <span className="font-helvetica text-body-md text-primary">{text}</span>
           </div>
         ))}
       </div>

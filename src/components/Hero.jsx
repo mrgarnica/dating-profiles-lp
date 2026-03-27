@@ -68,7 +68,7 @@ export default function Hero() {
         <div className="flex flex-col gap-8 bp-799:gap-10 items-center w-full z-[2]">
 
           {/* Hero title: smaller ≤599px, full size ≥600px */}
-          <h1 className="font-inter font-bold text-display-md bp-599:text-display-xl text-primary text-center w-full">
+          <h1 className="font-inter font-bold text-display-md bp-599:text-display-2xl text-primary text-center w-full">
             Uncover Dating Profiles &amp; Online History
           </h1>
 
@@ -106,7 +106,7 @@ export default function Hero() {
         </div>
 
         {/* Media social proof */}
-        <div className="flex flex-col gap-3 items-start bp-799:items-center w-full z-[1]">
+        <div className="flex flex-col gap-3 items-start bp-599:items-center w-full z-[1]">
           <p className="font-helvetica font-bold text-body-xs text-grey-600 text-left bp-799:text-center">
             Spokeo has been featured on
           </p>
@@ -119,13 +119,13 @@ export default function Hero() {
           </div>
 
           {/* Icon logos — below 799px (375px + 600-799px), hugged + 20px gap */}
-          <div className="flex bp-799:hidden items-center gap-5 justify-start">
+          <div className="flex bp-799:hidden items-center w-full justify-between bp-599:w-auto bp-599:justify-start bp-599:gap-5">
             {MEDIA_LOGOS_ICON.map((logo, i) => (
               <img key={i} src={logo.src} alt={logo.alt} width={logo.w} height={logo.h}
                 style={{ width: logo.w, height: logo.h, display: 'block', flexShrink: 0 }} />
             ))}
           </div>
-          <p className="font-helvetica italic text-body-xs text-secondary text-center w-full">
+          <p className="font-helvetica italic text-body-xs text-secondary text-left bp-599:text-center w-full">
             *Reference to media doesn&apos;t imply endorsement of Spokeo or its products.
           </p>
         </div>

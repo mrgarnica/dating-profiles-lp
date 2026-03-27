@@ -25,6 +25,11 @@
   --color-brand:      #3392ff;   /* used in input focus shadow */
   --color-red-700:    #cb3030;   /* form validation */
 
+  /* ── LP-specific display sizes ───────────── */
+  --text-display-2xl: 2.5rem;                    /* 40px */
+  --text-display-2xl--line-height: 2.875rem;     /* 46px */
+  --text-display-2xl--letter-spacing: -0.2px;
+
   /* ── Radius aliases ──────────────────────── */
   --radius-8:  var(--radius-spk-8);
   --radius-12: 12px;

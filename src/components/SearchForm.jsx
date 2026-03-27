@@ -9,7 +9,7 @@ function InputField({ id, placeholder, showTooltip }) {
     <div className="relative flex flex-col gap-1 flex-1 min-w-0">
       {/* Input wrapper */}
       <div className={[
-        'flex items-center gap-2 px-4 h-12 bg-white rounded-8 border-2 transition-colors shadow-input w-full',
+        'flex items-center gap-2 px-4 h-12 bg-white rounded-8 border-2 transition-colors shadow-input w-full overflow-hidden',
         isError  ? 'border-red-700'  :
         filled   ? 'border-secondary' :
         'border-transparent'

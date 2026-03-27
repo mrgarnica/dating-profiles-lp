@@ -100,17 +100,14 @@ export default function Hero() {
               </div>
             </div>
 
-            <p className="font-helvetica italic text-body-xs text-secondary text-center">
-              *Spokeo scans many dating &amp; social platforms but does not guarantee coverage of all sites.
-            </p>
           </div>
 
           <SearchForm />
         </div>
 
         {/* Media social proof */}
-        <div className="flex flex-col gap-3 items-center w-full z-[1]">
-          <p className="font-helvetica font-bold text-body-xs text-grey-600 text-center">
+        <div className="flex flex-col gap-3 items-start bp-799:items-center w-full z-[1]">
+          <p className="font-helvetica font-bold text-body-xs text-grey-600 text-left bp-799:text-center">
             Spokeo has been featured on
           </p>
           {/* Full text logos — ≥799px only */}
@@ -122,7 +119,7 @@ export default function Hero() {
           </div>
 
           {/* Icon logos — below 799px (375px + 600-799px), hugged + 20px gap */}
-          <div className="flex bp-799:hidden items-center gap-5 justify-center">
+          <div className="flex bp-799:hidden items-center gap-5 justify-start">
             {MEDIA_LOGOS_ICON.map((logo, i) => (
               <img key={i} src={logo.src} alt={logo.alt} width={logo.w} height={logo.h}
                 style={{ width: logo.w, height: logo.h, display: 'block', flexShrink: 0 }} />

@@ -6,7 +6,7 @@ function InputField({ id, placeholder, showTooltip }) {
   const isError = !filled   // error shown by default until field is filled
 
   return (
-    <div className="relative flex flex-col gap-1 flex-1 w-full">
+    <div className="relative flex flex-col gap-1 flex-1 min-w-0 w-full">
       {/* Input wrapper */}
       <div className={[
         'flex items-center gap-2 px-4 h-12 bg-white rounded-8 border-2 transition-colors shadow-input w-full',
@@ -80,7 +80,7 @@ export default function SearchForm() {
       </div>
 
       {/* Value props */}
-      <div className="flex flex-wrap gap-x-4 gap-y-2 bp-799:gap-3 items-center justify-center w-full">
+      <div className="flex flex-col bp-599:flex-row bp-599:flex-wrap gap-y-2 bp-599:gap-x-4 bp-799:gap-3 items-start bp-599:items-center bp-599:justify-center w-full">
         {[
           'Private searches — no alerts sent',
           'Scan 120+ dating & social sites — from Tinder to IG',

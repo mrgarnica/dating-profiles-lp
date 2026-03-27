@@ -67,8 +67,8 @@ export default function Hero() {
 
         <div className="flex flex-col gap-8 bp-799:gap-10 items-center w-full z-[2]">
 
-          {/* Hero title: 28px mobile → 40px ≥799px */}
-          <h1 className="font-inter font-bold text-display-md bp-799:text-display-xl text-primary text-center w-full">
+          {/* Hero title: smaller ≤599px, full size ≥600px */}
+          <h1 className="font-inter font-bold text-display-md bp-599:text-display-xl text-primary text-center w-full">
             Uncover Dating Profiles &amp; Online History
           </h1>
 
@@ -121,8 +121,8 @@ export default function Hero() {
             ))}
           </div>
 
-          {/* Icon logos — below 799px (375px + 600-799px) */}
-          <div className="flex bp-799:hidden items-center justify-between w-full">
+          {/* Icon logos — below 799px (375px + 600-799px), hugged + 20px gap */}
+          <div className="flex bp-799:hidden items-center gap-5 justify-center">
             {MEDIA_LOGOS_ICON.map((logo, i) => (
               <img key={i} src={logo.src} alt={logo.alt} width={logo.w} height={logo.h}
                 style={{ width: logo.w, height: logo.h, display: 'block', flexShrink: 0 }} />

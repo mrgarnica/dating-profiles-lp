@@ -9,15 +9,15 @@ const DATING_LOGOS = [
   { src: '/assets/cefd729d297e431053d442d08c3a0a98891fe245.svg', alt: 'OKCupid',    cls: 'max-w-[77px]' },
 ]
 
-// Full text logos — shown at ≥799px
+// Full text logos — shown at ≥799px (height 28px, width calculated from viewBox ratio)
 const MEDIA_LOGOS = [
-  { src: '/assets/5ec248a8762db5373ba37b0b5ccf510ffabee4a3.svg', alt: 'CBS',               w: 84,  h: 24 },
-  { src: '/assets/86b6970036f563dac27351b8435f4af536ce22a0.svg', alt: 'ABC',               w: 24,  h: 24 },
-  { src: '/assets/8d9ba21c648ad15bd68bd07a75ed407616c877f1.svg', alt: 'The New York Times', w: 183, h: 24 },
-  { src: '/assets/fe66177eee4f67b6923b740dc3d16acbc1be6172.svg', alt: 'Fox News',           w: 24,  h: 24 },
-  { src: '/assets/d8fa6a23561605d20cd9d8e08a50b37d32b89893.svg', alt: 'CNBC',              w: 124, h: 16 },
-  { src: '/assets/1fa3030787b1c998df303410d6970f9b635cac65.svg', alt: 'WSJ',               w: 41,  h: 24 },
-  { src: '/assets/ff444e8fcbd3b36d1c95b99fa0f604893277f7a2.svg', alt: 'MTV',               w: 31,  h: 16 },
+  { src: '/assets/5ec248a8762db5373ba37b0b5ccf510ffabee4a3.svg', alt: 'CBS',               w: 98,  h: 28 }, // viewBox 93.333×26.667 → ×1.05
+  { src: '/assets/86b6970036f563dac27351b8435f4af536ce22a0.svg', alt: 'ABC',               w: 28,  h: 28 }, // viewBox 26.667×26.667 → 1:1
+  { src: '/assets/8d9ba21c648ad15bd68bd07a75ed407616c877f1.svg', alt: 'The New York Times', w: 213, h: 28 }, // viewBox 202.667×26.667 → ×1.05
+  { src: '/assets/fe66177eee4f67b6923b740dc3d16acbc1be6172.svg', alt: 'Fox News',           w: 28,  h: 28 }, // viewBox 26.667×26.667 → 1:1
+  { src: '/assets/d8fa6a23561605d20cd9d8e08a50b37d32b89893.svg', alt: 'CNBC',              w: 217, h: 28 }, // viewBox 124×16 → ratio 7.75
+  { src: '/assets/1fa3030787b1c998df303410d6970f9b635cac65.svg', alt: 'WSJ',               w: 48,  h: 28 }, // viewBox 45.333×26.667 → ratio 1.7
+  { src: '/assets/ff444e8fcbd3b36d1c95b99fa0f604893277f7a2.svg', alt: 'MTV',               w: 54,  h: 28 }, // viewBox 30.75×15.882 → ratio 1.936
 ]
 
 // Icon-only logos — shown below 799px (375px + 600-799px breakpoints)
@@ -116,7 +116,7 @@ export default function Hero() {
             Spokeo has been featured on
           </p>
           {/* Full text logos — ≥799px only */}
-          <div className="hidden bp-799:flex flex-wrap items-center justify-between gap-y-4 w-full">
+          <div className="hidden bp-799:flex items-center gap-8">
             {MEDIA_LOGOS.map((logo, i) => (
               <img key={i} src={logo.src} alt={logo.alt} width={logo.w} height={logo.h}
                 style={{ width: logo.w, height: logo.h, display: 'block', flexShrink: 0 }} />

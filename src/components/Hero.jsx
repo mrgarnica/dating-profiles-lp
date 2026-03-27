@@ -110,7 +110,7 @@ export default function Hero() {
 
         {/* Media social proof */}
         <div className="flex flex-col gap-3 items-center w-full z-[1]">
-          <p className="font-helvetica font-bold text-body-xs text-grey-600 text-center uppercase tracking-wider">
+          <p className="font-helvetica font-bold text-body-xs text-grey-600 text-center">
             Spokeo has been featured on
           </p>
           {/* Full text logos — ≥799px only */}

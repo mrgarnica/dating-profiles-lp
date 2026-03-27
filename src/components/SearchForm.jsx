@@ -6,7 +6,7 @@ function InputField({ id, placeholder, showTooltip }) {
   const isError = !filled   // error shown by default until field is filled
 
   return (
-    <div className="relative flex flex-col gap-1 flex-1 min-w-0 w-full">
+    <div className="relative flex flex-col gap-1 flex-1 min-w-0">
       {/* Input wrapper */}
       <div className={[
         'flex items-center gap-2 px-4 h-12 bg-white rounded-8 border-2 transition-colors shadow-input w-full',

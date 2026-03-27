@@ -15,9 +15,9 @@ const MEDIA_LOGOS = [
   { src: '/assets/86b6970036f563dac27351b8435f4af536ce22a0.svg', alt: 'ABC',               w: 28,  h: 28 }, // viewBox 26.667×26.667 → 1:1
   { src: '/assets/8d9ba21c648ad15bd68bd07a75ed407616c877f1.svg', alt: 'The New York Times', w: 213, h: 28 }, // viewBox 202.667×26.667 → ×1.05
   { src: '/assets/fe66177eee4f67b6923b740dc3d16acbc1be6172.svg', alt: 'Fox News',           w: 28,  h: 28 }, // viewBox 26.667×26.667 → 1:1
-  { src: '/assets/d8fa6a23561605d20cd9d8e08a50b37d32b89893.svg', alt: 'CNBC',              w: 217, h: 28 }, // viewBox 124×16 → ratio 7.75
+  { src: '/assets/d8fa6a23561605d20cd9d8e08a50b37d32b89893.svg', alt: 'CNBC',              w: 155, h: 20 }, // viewBox 124×16 → native 16px, scaled to 20px (proportional to 28px others)
   { src: '/assets/1fa3030787b1c998df303410d6970f9b635cac65.svg', alt: 'WSJ',               w: 48,  h: 28 }, // viewBox 45.333×26.667 → ratio 1.7
-  { src: '/assets/ff444e8fcbd3b36d1c95b99fa0f604893277f7a2.svg', alt: 'MTV',               w: 54,  h: 28 }, // viewBox 30.75×15.882 → ratio 1.936
+  { src: '/assets/ff444e8fcbd3b36d1c95b99fa0f604893277f7a2.svg', alt: 'MTV',               w: 39,  h: 20 }, // viewBox 30.75×15.882 → native 16px, scaled to 20px
 ]
 
 // Icon-only logos — shown below 799px (375px + 600-799px breakpoints)

@@ -68,12 +68,15 @@ export default function Hero() {
         <div className="flex flex-col gap-8 bp-799:gap-10 items-center w-full z-[2]">
 
           {/* Hero title: smaller ≤599px, full size ≥600px */}
-          <h1 className="font-inter font-bold text-display-md bp-599:text-display-2xl text-primary text-center w-full">
+          <h1
+            className="font-inter font-bold text-display-md bp-599:text-display-2xl text-primary text-center w-full"
+            style={{ animation: 'fadeInUp 0.6s ease-out both' }}
+          >
             Uncover Dating Profiles &amp; Online History
           </h1>
 
           {/* Dating site social proof */}
-          <div className="flex flex-col gap-2 items-center w-full z-[3]">
+          <div className="flex flex-col gap-2 items-center w-full z-[3]" style={{ animation: 'fadeInUp 0.6s ease-out 150ms both' }}>
             <p className="font-helvetica text-body-md text-primary text-center">We scan these sites for cheaters*</p>
 
             {/* Marquee logos */}
@@ -102,11 +105,13 @@ export default function Hero() {
 
           </div>
 
-          <SearchForm />
+          <div style={{ animation: 'fadeInUp 0.6s ease-out 300ms both', width: '100%' }}>
+            <SearchForm />
+          </div>
         </div>
 
         {/* Media social proof */}
-        <div className="flex flex-col gap-3 items-start bp-599:items-center w-full z-[1]">
+        <div className="flex flex-col gap-3 items-start bp-599:items-center w-full z-[1]" style={{ animation: 'fadeInUp 0.6s ease-out 450ms both' }}>
           <p className="font-helvetica font-bold text-body-xs text-grey-600 text-left bp-799:text-center">
             Spokeo has been featured on
           </p>
@@ -134,6 +139,10 @@ export default function Hero() {
 
       {/* ── Keyframes ── */}
       <style>{`
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(16px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
         @keyframes marquee {
           from { transform: translateX(0); }
           to   { transform: translateX(-50%); }

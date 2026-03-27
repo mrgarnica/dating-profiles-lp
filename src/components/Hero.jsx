@@ -32,7 +32,7 @@ const MEDIA_LOGOS_ICON = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[calc(100vh-72px-44px)] flex items-center justify-center px-5 py-10 bp-599:px-8 bp-599:py-12 bp-799:py-[60px] overflow-hidden">
+    <section className="relative min-h-[calc(100vh-72px-44px)] flex items-center justify-center px-4 py-8 bp-599:px-8 bp-599:py-10 bp-799:py-[60px] overflow-hidden">
 
       {/* ── Background layers ── */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
